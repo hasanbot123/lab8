@@ -4,11 +4,11 @@
 begin
   var dt := ReadInteger('Укажите год');
   if ((dt mod 4 = 0) and (dt mod 100 <> 0)) then
-    Print('Високосный')
+    Print('366 дней')
   else if ((dt mod 400 = 0) and (dt mod 100 = 0)) then
-    Print('Високосный')
+    Print('366 дней')
   else
-    Print('Не является високосным');
+    Print('365 дней');
 end.
 
 {
